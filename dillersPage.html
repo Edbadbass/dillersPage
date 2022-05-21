@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница дилера</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="/css/stylei.css" type="text/css" rel="stylesheet">
+    <link href="/css/sideMenu.css" type="text/css" rel="stylesheet">
+    <link href="/css/modalWindow.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <section class="contactsInHeader">
+      <div class="contactsInHeader-inner">
+        <h2 hidden>Контакты в шапке</h2>
+        <section class="socialLinks">
+          <h3 hidden>Социальные сети</h3>
+          <p>Мы в соц. сетях: </p>
+          <a href="https://www.youtube.com/user/CHETRAinfo/featured"><img src="img/youtube.png" alt="youTube"></a>
+        </section>
+        <section class="upper-contacts">
+          <h3 hidden>Контакты в шапке</h3>
+          <p class="boldText">Время работы:</p> <p class="upperData">Пн-Пт с 08:00 до 17:00</p>
+          <p class="boldText">E-mail:</p> <p class="upperData"><a href="mailto:test@mail.ru">test@mail.ru</a></p>
+          <label for="modalMail" class="button">Заказать звонок</label>
+          <div class="chazIcon">
+            <p>Официальный дилер</p>
+            <img src="img/icon.svg" alt="chazIcon">
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="navigation" id="fixed-header">
+      <h2 hidden>Навигация</h2>
+      <div class="navigation-inner">
+        <a href="#" class="mainIcon"><img src="img/cat%201.svg" alt="mainLogo">Фото от дилера</a>
+        <nav class="usual-menu">
+          <ul class="nav-menu">
+            <li>
+              <a href="#about">О дилере</a>
+            </li>
+            <li>
+              <a href="#iframe">Каталог запчастей</a>
+            </li>
+            <li>
+              <a href="#DealerDescription">Услуги</a>
+            </li>
+            <li>
+              <a href="#products">О бренде</a>
+            </li>
+            <li>
+              <a href="#bottom-contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <p>
+          Отдел продаж: <a href="tel:8(8352)388488"> 8 (8352) 388-488</a>
+        </p>
+        <input type="checkbox" id="side-checkbox" />
+        <div class="side-panel">
+          <label class="side-button-2" for="side-checkbox">+</label>
+          <div class="side-title">Навигация по сайту:</div>
+          <nav>
+            <ul>
+              <li>
+                <a class="link-close" href="#about" onclick="closeSide()">О дилере</a>
+              </li>
+              <li>
+                <a class="link-close" href="#iframe" onclick="closeSide()">Каталог запчастей</a>
+              </li>
+              <li>
+                <a  href="#DealerDescription" onclick="closeSide()">Услуги</a>
+              </li>
+              <li>
+                <a href="#products" onclick="closeSide()">О бренде</a>
+              </li>
+              <li>
+                <a class="link-close" href="#bottom-contacts" onclick="closeSide()">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="side-button-1-wr">
+          <label class="side-button-1" for="side-checkbox">
+            <div class="side-b side-open"><img src="img/icons8-menu-32.png"></div>
+            <div class="side-b side-close" id="closeSide"><img src="img/close-icon.png"></div>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section class="firstLine" id="add-padding">
+      <div class="firstLine-scoupe">
+        <div class="advantages">
+          <h2>Запчасти к тракторам Caterpillar</h2>
+          <ul>
+            <li>
+              Профессиональный подбор
+            </li>
+            <li>
+              Гарантия
+            </li>
+            <li>
+              Выгодные цены
+            </li>
+            <li>
+              Доставка
+            </li>
+          </ul>
+          <a id="myBtn">Подробнее</a>
+
+        </div>
+
+
+        <div id="myModal" class="modal">
+
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Подробнее о бренде</h2>
+            </div>
+            <div class="modal-body">
+              <p>Компания Caterpillar — мировой лидер в производстве строительного и горного оборудования,
+                двигателей, работающих на природном газе и дизельном топливе, а также промышленных турбин и
+                дизель-электрических локомотивов. Кроме того, благодаря работе нашего подразделения Caterpillar
+                Financial Services мы занимаем ведущие позиции на рынке услуг по кредитованию приобретения техники.</p>
+              <p>Многолетняя история нашего существования богата инновациями,
+                мы используем самые передовые технологии для разработки наилучших решений для наших заказчиков.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="advantages-pick">
+          <img src="img/advantages-pick.png">
+          <p class="photoFromDiler">Фото от дилера</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <h1 hidden>Страница дилера</h1>
+    <section class="about" >
+      <div class="about-text" id="about">
+        <h2>О компании</h2>
+        <p>
+          Компания Caterpillar — мировой лидер в производстве строительного и горного оборудования,
+          двигателей, работающих на природном газе и дизельном топливе, а также промышленных турбин и
+          дизель-электрических локомотивов. Кроме того, благодаря работе нашего подразделения Caterpillar
+          Financial Services мы занимаем ведущие позиции на рынке услуг по кредитованию приобретения техники.
+        </p>
+        <p>
+          Многолетняя история нашего существования богата инновациями,
+          мы используем самые передовые технологии для разработки наилучших решений для наших заказчиков.
+        </p>
+        <p class="textFromDiller">Текст от дилера</p>
+        <a href="https://www.caterpillar.com/ru.html" target="_blank"><p class="link-about">Подробнее о бренде</p> <img src="img/Arrow%2011.svg" alt="arrow"></a>
+      </div>
+      <div class="about-picture">
+        <img src="img/aboutPicture.jpg" alt="Фото дилера">
+        <p class="photoFromDiler">Фото от дилера</p>
+      </div>
+
+    </section>
+    <section class="advantages-list">
+          <div class="advantages__wraper">
+
+          </div>
+    </section>
+    <section class="iframe" id="iframe">
+      <h2>Быстрый подбор запчастей</h2>
+        <iframe src="https://chaz-spc.ru/filter_iframe/#bx_incl_area_6" class="prev_filter_wrapper" scrolling="no" id="myFrame">Ваш браузер не поддерживает iframe!</iframe>
+    </section>
+    <section class="feedback">
+      <h2 hidden>Обратная связь</h2>
+      <div class="feedbackForm" id="feedback-form">
+        <h3>Не нашли нужную запчасть?</h3>
+        <p>Звоните по номеру: <a href="tel:+79001233432">7 (900) 123-34-32</a> <a href="tel:+78352233432">8 (8352) 23-34-32</a> или отправьте запрос:</p>
+        <form action="" id="formId">
+            <p>
+              <lable for="usersName">Ваше имя</lable><br>
+              <input id="usersName" type="text" name="name" required>
+            </p>
+            <p>
+              <label for="phoneNumber">Номер телефона</label><br>
+              <input id="phoneNumber" type="tel" name="phoneNumber" required>
+            </p>
+            <p>
+              <label for="model">Модель техники, запчасть</label><br>
+              <input id="model" type="text" name="message" required>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="personalData">Нажимая на кнопку, вы даете согласие на обработку своих <label class="underline" for="modal4">персональных данных</label></p>
+
+      </div>
+      <p class="photoFromDiler">Фото от дилера</p>
+    </section>
+
+    <section class="DealerDescription" id="DealerDescription">
+      <h2 hidden>Качества дилера</h2>
+      <ul>
+        <li>
+          <div class="DealerDescriptionPic">
+            <img class="long-img" src="img/DescriptionTrack.svg" alt="Доставка">
+          </div>
+          <div>
+            <h3>Доставка товара</h3>
+            <p>
+              Мы доставляем в любой регион России или до транспортной компании
+            </p>
+            <p class="textFromDiller">Текст от дилера</p>
+          </div>
+        </li>
+        <li>
+          <div class="DealerDescriptionPic">
+            <img src="img/DescriptionMedal.svg" alt="Гарантия">
+          </div>
+          <div>
+            <h3>Гарантия</h3>
+            <p>
+              Являясь официальным дилером, даем заводскую гарантию на наш товар
+            </p>
+          </div>
+
+        </li>
+        <li>
+          <div class="DealerDescriptionPic">
+            <img src="img/DescriptionCheck.svg" alt="Гарантия">
+
+          </div>
+          <div>
+            <h3>Качество</h3>
+            <p>
+              Весь товар  прошел российскую
+              и международную сертификацию
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="DealerDescriptionPic">
+            <img  class="long-img" src="img/DescriptionPrices.svg" alt="Гарантия">
+          </div>
+          <div>
+            <h3>Цены</h3>
+            <p>
+              Весь товар  прошел российскую
+              и международную сертификацию
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="products" id="products">
+      <div class="productFullDescription">
+        <h2>Продукция ЧАЗ ТМ</h2>
+        <p>
+          ЧАЗ ТМ - это отдельная торговая марка деталей ходовых систем и быстроизнашиваемых элементов, выпускаемых ООО «ПК «ЧАЗ»
+          и другими предприятиями Machinery & Industrial Group N.V.. Производитель деталей — Чебоксарский агрегатный завод.
+        </p>
+        <p class="textFromDiller">Текст от дилера</p>
+        <div class="product-link">
+          <a href="#"><p>Перейти в каталог</p> <img src="img/Arrow%2011.svg" alt="arrow"></a>
+        </div>
+      </div>
+      <div class="images-block">
+        <div>
+          <a href="https://chaz-spc.ru/products/sparepartsforindustrialmachinery/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-2.png" alt="Для промышленной техники">
+          </figure>
+          <p class="product-description">Для промышленной техники</p>
+        </div>
+        <div>
+          <a href="https://chaz-spc.ru/products/foragriculturalmachinery/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-1.png" alt="Продукт2">
+          </figure>
+          <p class="product-description">Для сельскохозяйственной техники</p>
+        </div>
+        <div>
+          <a href="https://chaz-spc.ru/products/forforestrymachinery/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-3.png" alt="Продукт3">
+          </figure>
+          <p class="product-description">Для лесопромышленной техники</p>
+        </div>
+        <div>
+          <a href="https://chaz-spc.ru/products/clutch-assemblies/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-4.png" alt="Продукт4">
+          </figure>
+          <p class="product-description">Узлы сцепления</p>
+        </div>
+        <div>
+          <a href="https://chaz-spc.ru/products/wearparts/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-5.png" alt="Продукт5">
+          </figure>
+          <p class="product-description">Быстроизнашиваемые элементы</p>
+        </div>
+        <div>
+          <a href="https://chaz-spc.ru/zakaz/" target="_blank"><img src="img/ArrowWhite.svg"></a>
+          <figure>
+            <img src="img/product-6.png" alt="Продукт6">
+          </figure>
+          <p class="product-description">Комплектующие и заготовки на заказ</p>
+        </div>
+      </div>
+    </section>
+    <section class="firstCorusel">
+      <div class="developers">
+        <h2>Производители</h2>
+        <div class="sliderButtons">
+          <button class="prev"></button>
+          <button class="next"></button>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme slide-one">
+        <div class="slide"><a><img src="img/Frame%2077.svg"></a></div>
+        <div class="slide"><a><img src="img/hitachi%201.svg"></a></div>
+        <div class="slide"><a><img src="img/volvo%201.svg"></a></div>
+        <div class="slide"><a><img src="img/volvo%201.svg"></a></div>
+        <div class="slide"><a><img src="img/volvo%201.svg"></a></div>
+      </div>
+    </section>
+    <section class="secondCorusel">
+      <div class="news">
+        <h2>Новости</h2>
+        <div class="sliderButtons">
+          <button class="prev-two"></button>
+          <button class="next-two"></button>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme slide-two">
+        <div class="slide">
+          <label for="modal1">
+            <img src="img/Rectangle%201073.png">
+          </label>
+            <p>Представители компаний «Хитачи Констракшн Машинери Евразия» и «ЧЕТРА» (официального ...</p>
+          <p class="dateOfNews">
+            <time datetime="2022-02-22">13 января 2022</time>
+          </p>
+        </div>
+        <div class="slide">
+          <label for="modal3">
+            <img src="img/Rectangle%201072.png">
+          </label>
+            <p> С Днём защитника Отечества!</p>
+          <p class="dateOfNews">
+            <time datetime="2022-02-08">22 февраля 2022</time>
+          </p>
+        </div>
+        <div class="slide">
+          <label for="modal2">
+            <img src="img/Rectangle%201074.png">
+          </label>
+            <p>В чем сила?! Сила – в технологии</p>
+          <p class="dateOfNews">
+            <time datetime="2022-01-13">08 февраля 2022</time>
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A44dc47903a32de221f10a7a749c95cddca15d8d993ce59562ede43fb534c7437&amp;width=100%25&amp;height=690&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="bottom-contacts" id="bottom-contacts">
+        <div class="bottom-address">
+          <img src="img/mapPoint.svg" alt="адрес">
+          <p>
+            г. Чебоксары, ул. Иванова 20
+          </p>
+        </div>
+        <div class="bottom-phone">
+          <img src="img/IconPhone.svg" alt="Номер телефона">
+          <div>
+            <a href="tel:+79001111121">
+              8 (900) 111-11-21
+            </a>
+            <a href="tel:+79001234321">
+              8 (900) 123-43-21
+            </a>
+          </div>
+        </div>
+        <div class="bottom-email">
+          <img src="img/IconLetter.svg">
+          <a href="mailto:cheb_dealer@mail.ru">
+            cheb_dealer@mail.ru
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="bottom-line">
+        <div class="left-bottom">
+          <a href="#"><img src="img/cat%201.svg">Фото от дилера</a>
+          <p>Copyright © 2022, Все права защищены</p>
+        </div>
+        <div class="right-bottom">
+          <label class="underline" for="modal4">Политика обработки персональных данных</label>
+            <label class="underline" for="modal5">Условия публичной оферты</label>
+        </div>
+    </section>
+  </footer>
+
+
+  <div>
+    <input class="modal-controller" id="modal1" type="checkbox">
+    <div class="modal-content-two">
+      <label for="modal1" class="closeWindow"></label>
+      <div class="modal-inner">
+        <div>
+        </div>
+        <div class="modal-header">
+          <label for="modal1" class="close">&times;</label>
+          <h2>Новости</h2>
+        </div>
+
+        <p class="news-picture">
+          <img src="img/news1.jpg">
+        </p>
+        <div class="modalText">
+          <p>
+            Наша компания и ООО «Хитачи Констракшн Машинери Евразия» (российское подразделение японской фирмы «Hitachi») рассматривают возможности для сотрудничества. В ходе двухдневного визита в Чебоксары представители японской фирмы провели переговоры с руководством предприятия, а также посетили Чебоксарский агрегатный завод и завод «Промтрактор».
+          </p>
+          <p>
+            Сейчас компания «Хитачи Констракшн Машинери Евразия» рассматривает варианты локализации производства гусениц на территории нашей страны для выпускаемых на заводе в Твери экскаваторов. Чебоксарский агрегатный завод, являясь лидером по производству комплектующих для промышленной техники и имея опыт изготовления ходовых систем для зарубежных машин, в том числе и для экскаваторов Hitachi, готов к сотрудничеству по данному направлению. Более того, у завода уже есть определенные компетенции в плане локализации производства компонентов других иностранных компаний.
+          </p>
+          <p>
+            Еще одно направление для потенциального сотрудничества – изготовление поковок и отливок, изделий с механической обработкой для производимой в Твери японской техники. Гости познакомились с мощностями Чебоксарского агрегатного завода – посетили механо-сборочный, кузнечный цеха. Представители «Хитачи Констракшн Машинери Евразия»  отметили, что ЧАЗ - предприятие полного цикла, что является несомненным плюсом, а масштабное производство с богатой историей позволяет выполнять заказы в полном объеме и в срок.
+            Ирина Малкова, директор по продажам запасных частей и комплектующих ООО «ЧЕТРА»: «Наша компания зарекомендовала себя на российском и зарубежном рынке как надежный поставщик ходовых систем к гусеничной промышленной технике. Цены на запасные части производства ЧАЗ конкурентоспособны и сопоставимы со стоимостью аналогов. Сотрудничество с японской компанией позволит нам расширить число наших потребителей, а «Хитачи Констракшн Машинери Евразия» закрепиться статусом российского производителя».
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <input class="modal-controller" id="modal2" type="checkbox">
+    <div class="modal-content-two">
+      <label for="modal2" class="closeWindow"></label>
+      <div class="modal-inner">
+        <div class="modal-header">
+          <label for="modal2" class="close">&times;</label>
+          <h2>Новости</h2>
+        </div>
+        <p class="news-picture">
+          <img src="img/news2.jpg">
+        </p>
+        <div class="modalText">
+          <p>
+            Почему гусеницы серии Heavy Duty от бренда ЧАЗ ТМ легко выдерживают экстремальные температуры и спокойно себя чувствуют в климатических условиях Сибири и Дальнего Востока? А потому что в них пять составляющих мощности:
+          </p>
+          <ul>
+            <li>
+              специально разработанные для звеньев гусениц и роликов опорных катков высоколегированные стали с высокой ударной стойкостью
+            </li>
+            <li>комбинированные уплотнения одного из ведущих мировых производителей</li>
+            <li>заправленное в шарниры трансмиссионное масло ТСп-10, которое сохраняет свои свойства про морозе до -50°С</li>
+            <li>усиленные замыкающие звенья гусениц с многозубым разъемом</li>
+            <li>высокопрочные болты и гайки</li>
+          </ul>
+          <p>
+            Данная серия применяется на всю линейку техники ЧЕТРА, а также для Komatsu D275,
+            D375, Caterpillar D9, D10.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <input class="modal-controller" id="modal3" type="checkbox">
+    <div class="modal-content-two">
+      <label for="modal3" class="closeWindow"></label>
+      <div class="modal-inner">
+        <div class="modal-header">
+          <label for="modal3" class="close">&times;</label>
+          <h2>Новости</h2>
+        </div>
+        <p class="news-picture">
+          <img src="img/news3.jpg">
+        </p>
+        <div class="modalText">
+          <p>
+            В этот день мы поздравляем с праздником не только тех, кто нес или несет службу в Вооруженных силах России, но и всех мужчин страны.
+            Ведь вы даете ежедневную защиту, стабильность близким и любимым людям.
+          </p>
+          <p>
+            Желаем вам быть сильными духом и крепкими телом, не скупиться на положительные эмоции и находить радость в каждом дне.
+            Желаем всегда достигать поставленных целей, а в препятствиях видеть возможности для роста.
+          </p>
+          <p>
+            Даже сильному полу нужна поддержка. И пусть она у вас будет – в виде теплых объятий родных, надежных рукопожатий друзей,
+            подстраховки коллег.
+          </p>
+          <p>
+            Счастья и здоровья Вам и Вашим близким!
+          </p>
+          <p>
+            ЧАЗ ТМ. Надежные ходовые системы.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <input class="modal-controller" id="modal4" type="checkbox">
+    <div class="modal-content-two">
+      <label for="modal4" class="closeWindow"></label>
+      <div class="modal-inner">
+        <div class="modal-header">
+          <label for="modal4" class="close">&times;</label>
+          <h2>Политика обработки персональных данных</h2>
+        </div>
+        <div class="modalText">
+          <p>
+            Текст на согласие на обработку персональных данных
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-window">
+      <input class="modal-controller" id="modal5" type="checkbox">
+      <div class="modal-content-two">
+        <label for="modal5" class="closeWindow"></label>
+          <div class="modal-inner">
+            <div class="modal-header">
+              <label for="modal5" class="close">&times;</label>
+              <h2>Условия публичной оферты</h2>
+            </div>
+            <div class="modalText">
+              <p>
+                Текст публичной оферты
+              </p>
+            </div>
+          </div>
+      </div>
+
+    <div>
+      <input class="modal-controller" id="modalMail" type="checkbox">
+      <div class="modal-content-two">
+        <label for="modalMail" class="closeWindow"></label>
+        <div class="modal-inner" id="shorterModal">
+          <div class="modal-header">
+            <label for="modalMail" class="close">&times;</label>
+            <h2>Обратный звонок</h2>
+          </div>
+
+          <form action="" id="formId2">
+            <p>
+              <lable for="usersName">Ваше имя</lable><br>
+              <input id="usersName2" type="text" name="name" maxlength="25" required>
+            </p>
+            <p>
+              <label for="phoneNumber">Номер телефона</label><br>
+              <input id="phoneNumber2" type="tel" name="phoneNumber" required>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Подробнее о бренде</h2>
+        </div>
+        <div class="modal-body">
+          <p>Компания Caterpillar — мировой лидер в производстве строительного и горного оборудования,
+            двигателей, работающих на природном газе и дизельном топливе, а также промышленных турбин и
+            дизель-электрических локомотивов. Кроме того, благодаря работе нашего подразделения Caterpillar
+            Financial Services мы занимаем ведущие позиции на рынке услуг по кредитованию приобретения техники.</p>
+          <p>Многолетняя история нашего существования богата инновациями,
+            мы используем самые передовые технологии для разработки наилучших решений для наших заказчиков.</p>
+        </div>
+      </div>
+
+    </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/mail.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/maskphone.js"></script>
+    <script>
+        $(document).click(function (e) {
+          if ($(e.target).is('.modal-content-two')) {
+            $(e.target).closest('.close').click();
+          }
+        });
+
+    </script>
+  <script>
+    $(function() {
+      $(".slide-one").owlCarousel({
+        items:6,
+        margin:30,
+        loop:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          500:{
+            items:2
+          },
+          700:{
+            items:3
+          },
+          1500:{
+            items:6
+          }
+        }
+      });
+      var owl=$(".slide-one");
+      owl.owlCarousel();
+      $(".next").click(function(){
+        owl.trigger("next.owl.carousel");
+      });
+      $(".prev").click(function(){
+        owl.trigger("prev.owl.carousel");
+      });
+    });
+
+    $(function() {
+      $(".slide-two").owlCarousel({
+        items:6,
+        margin:60,
+        loop:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:2
+          },
+          1500:{
+            items:3
+          }
+        }
+      });
+      var owl=$(".slide-two");
+      owl.owlCarousel();
+      $(".next-two").click(function(){
+        owl.trigger("next.owl.carousel");
+      });
+      $(".prev-two").click(function(){
+        owl.trigger("prev.owl.carousel");
+      });
+    });
+  </script>
+
+</body>
+</html>
